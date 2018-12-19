@@ -1,0 +1,3 @@
+rootProject.name = 'sass_tool_app'
+
+include ':app'

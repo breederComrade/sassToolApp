@@ -1,20 +1,22 @@
 {
-  "name": "sassToolApp",
-  "version": "1.0.0",
-  "description": "reactNatvie App",
-  "main": "index.js",
+  "name": "sass_tool_app",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/breederComrade/sassToolApp.git"
+  "dependencies": {
+    "react": "16.6.3",
+    "react-native": "0.57.8"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/breederComrade/sassToolApp/issues"
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.51.0",
+    "react-test-renderer": "16.6.3"
   },
-  "homepage": "https://github.com/breederComrade/sassToolApp#readme"
+  "jest": {
+    "preset": "react-native"
+  }
 }
