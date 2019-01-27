@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import './config/Theme.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -8,11 +8,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
        debugShowCheckedModeBanner: false,
-      title: '海马代购管理',
+      title: '福利',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+          primaryColor: appColor.themeColor
       ),
-      home: HomePage(title:"海马"),
+      home: HomePage(title:"福利"),
     );
   }
 }
