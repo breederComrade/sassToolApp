@@ -16,21 +16,31 @@ class _HomeState extends State<Home> {
          ),
          body: Column(
             children: <Widget>[
-              Container(
-                 height:400.0,
-                 width: 500.0,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage('https://cdn-images-1.medium.com/max/2560/1*coIJNA2IPue97FRDOWKjNg.jpeg')
-                  )
-                ),
-                child: 
-                 Text('data') ,
-                
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child:Container(
+                      color: appColor.themeColor,
+                      child:Text('data')
+                    )
+                   ,
+                  ),
+                  Expanded(
+                    child:Container(
+                      color: appColor.themeColor,
+                      child:Text('data')
+                    )
+                   ,
+                  ),
+                ],
               )
-            ],
+
+            ]
+              ),
+             
+             
+            
          )
-       )
     );
   }
 }
